@@ -1,0 +1,25 @@
+Nombre: Kevin Vega 
+Ejercicio 1 - Clase en linea
+
+#include <stdio.h>
+
+void main()
+{
+    int opc,grados,resul;
+    
+    printf("Calculadora de Tranformacion:\n De Centigrados a Fahrenheit, y viceversa\n");
+    printf("Ingrese 1 para ingresar Grados Centrigrados o 2 para Grados Fahrenheit\n");
+    scanf("%d",&opc);
+    if(opc==1){
+        printf("Ingrese los Grados Centigrados a Tranformar:\n");
+        scanf("%d",&grados);
+        resul=(grados*(9/5))+32;
+        printf("\nEl resultado es: %d",resul," F");
+    }else{
+        printf("Ingrese los Grados Fahrenheit a Tranformar:\n");
+        scanf("%d",&grados);
+        resul=(9/5)*(grados-32);
+        printf("\nEl resultado es: %d",resul," C");
+    }
+    
+}
